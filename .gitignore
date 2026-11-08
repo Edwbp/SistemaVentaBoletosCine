@@ -1,0 +1,5 @@
+bin/
+*.class
+fuentes.txt
+.vscode/
+repomix-output.*
