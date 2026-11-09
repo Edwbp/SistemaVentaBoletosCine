@@ -1,14 +1,13 @@
 package notificaciones;
 
+/**
+ * Canal de notificación por email.
+ * Implementa el contrato CanalNotificacion.
+ * SRP: su única responsabilidad es validar un teléfono y enviar por ese medio.
+ */
+public class NotificacionEmail implements CanalNotificacion {
 
-public class NotificacionEmail implements CanalNotificaciones {
 
-    /**
-     * envia la confirmacion al destinatario especifico.
-     * @param mensaje texto de la confirmacion de la reserva
-     * @param destinatario direccion, correo electronico. numero o token 
-     * @throws IllegalArgumentException si el mensaje o el destinatario es null
-     */
     @Override
     public void enviarConfirmacion(String destinatario, String mensaje) {
         if (!esCorreoValido(destinatario)) {
@@ -27,3 +26,5 @@ public class NotificacionEmail implements CanalNotificaciones {
         return arroba > 0 && punto > arroba + 1 && punto < destinatario.length() - 1;
     }
 }
+
+
