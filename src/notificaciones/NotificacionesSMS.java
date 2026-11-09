@@ -5,11 +5,11 @@ package notificaciones;
  * Implementa el contrato CanalNotificacion.
  * SRP: su única responsabilidad es validar un teléfono y enviar por ese medio.
  */
-public class NotificacionesSMS implements CanalNotificaciones {
+public class NotificacionesSMS implements CanalNotificacion {
 
     @Override
     public void  enviarConfirmacion(String destinatario, String mensaje) {
-        if (!esTelefonooValido(destinatario)) {
+        if (!esTelefonoValido(destinatario)) {
             throw new IllegalArgumentException(
                 "Telefono SMS invalido(formato +593 y 9 digitos):" + destinatario);
         } 
