@@ -15,7 +15,7 @@ public class Reserva {
      * setters se scriben y se validadn una sola vez por eso se llaman de un solo get.
      */
     public Reserva(String codigoReserva, String pelicula, int sala,
-                      int asiento, double montoTotal, String Cliente) {
+                      int asiento, double montoTotal, String cliente) {
             setCodigoReserva(codigoReserva);
             setPelicula(pelicula);
             setSala(sala);
