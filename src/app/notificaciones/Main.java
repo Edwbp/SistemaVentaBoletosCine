@@ -28,7 +28,6 @@ public class Main {
         Reserva r1 = new Reserva (" R-001", "Avengers" , 5 , 5 , 5.00,"Jesus@gmail.com" );
         Reserva r2 = new Reserva (" R-002", "Avatar" , 2 , 10 ,5.00,"Evelyns@gmail.com" );
         Reserva r3 = new Reserva (" R-003", "Sherk" , 3 , 7 , 5.00,"+593123456789" );
-        Reserva r4 = new Reserva (" R-004", "Kunfu Panda" , 6 , 2 , 5.00,"Carlos@gmail.com" );
         Reserva r5 = new Reserva (" R-005", "Bob Esponja" , 4 , 3 , 5.00,"Arturito@gmail.com" );
 
 /**
