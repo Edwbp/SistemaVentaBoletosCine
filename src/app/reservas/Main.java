@@ -1,6 +1,8 @@
 package app.reservas;
 
 import modelo.Boleto;
+import modelo.Pelicula;
+import salas.Sala2D;
 import salas.SalaCine;
 
 /** Programa de prueba del sistema de reservas de cine. */
@@ -9,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Creación de la sala
-        SalaCine sala = new SalaCine("La Era de Ultron", 20);
+        SalaCine sala = new Sala2D(1, 20, 5.00, new Pelicula("La Era de Ultron", 141));
         System.out.println("***** Sala creada *****");
         sala.mostrarAsientos();
 
@@ -83,4 +85,4 @@ public class Main {
         System.out.println("Boletos vendidos: " + SalaCine.getBoletosVendidos());
         System.out.println("Total recaudado: $" + String.format("%.2f", sala.calcularTotalRecaudado()));
     }
-}
+} 

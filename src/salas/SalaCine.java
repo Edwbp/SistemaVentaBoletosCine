@@ -7,7 +7,7 @@ import modelo.Pelicula;
  * Guarda un arreglo de Boleto: la posición i corresponde al asiento i + 1.
  * Una posición null significa asiento libre.
  */
-public class SalaCine {
+public abstract class SalaCine {
 
     // Constante de clase: precio estándar de la entrada
     public static final int CAPACIDAD_MAXIMA = 500;
